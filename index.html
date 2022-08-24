@@ -4,9 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form</title>
 </head>
 <body>
-    
+    <form action="" name="person_form">
+        <!-- Names -->
+        <label for="names">Names:</label><br>
+        <input type="text" id="names" name="names"><br>
+        <!-- Surname -->
+        <label for="surname">Surname:</label><br>
+        <input type="text" id="surname" name="surname"><br><br>
+        <!-- ID Type Selection -->
+        <label for="document_type">Document Type:</label><br>
+        <select name="id_type" id="id_type">
+            <option value="CC">Cedula de Ciudadania</option>
+            <option value="TT">Tarjeta de Identidad</option>
+            <option value="CE">Cedula de Extranjeria</option>
+        </select><br><br>
+        <!-- Document ID -->
+        <label for="document_id">Document ID:</label><br>
+        <input type="text" id="document_id" name="document_id"><br><br>
+        <!-- Gender Selection -->
+        <label for="gender_selection">Select a gender:</label><br>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label><br>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label><br>
+        <input type="radio" name="gender" id="other">
+        <label for="other">Other</label><br><br>
+        <!-- Form Submition -->
+        <input type="button" onclick="test()" value="Submit">
+    </form>
 </body>
+<script src="./js/form.js"></script>
 </html>

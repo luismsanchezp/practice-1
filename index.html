@@ -7,7 +7,7 @@
     <title>Form</title>
 </head>
 <body>
-    <form action="" name="personForm">
+    <form action="" name="person_form">
         <!-- Names -->
         <label for="names">Names:</label><br>
         <input type="text" id="names" name="names"><br>
@@ -15,22 +15,22 @@
         <label for="surname">Surname:</label><br>
         <input type="text" id="surname" name="surname"><br><br>
         <!-- ID Type Selection -->
-        <label for="documentType">Document Type:</label><br>
-        <select name="idType" id="idType">
+        <label for="document_type">Document Type:</label><br>
+        <select name="id_type" id="id_type">
             <option value="CC">Cedula de Ciudadania</option>
             <option value="TT">Tarjeta de Identidad</option>
             <option value="CE">Cedula de Extranjeria</option>
         </select><br><br>
         <!-- Document ID -->
-        <label for="documentId">Document ID:</label><br>
-        <input type="text" id="documentId" name="documentId"><br><br>
+        <label for="document_id">Document ID:</label><br>
+        <input type="text" id="document_id" name="document_id"><br><br>
         <!-- Gender Selection -->
-        <label for="gender">Select a gender:</label><br>
-        <input type="radio" name="Male" id="male">
+        <label for="gender_selection">Select a gender:</label><br>
+        <input type="radio" name="gender" id="male">
         <label for="male">Male</label><br>
-        <input type="radio" name="Female" id="female">
+        <input type="radio" name="gender" id="female">
         <label for="female">Female</label><br>
-        <input type="radio" name="Other" id="other">
+        <input type="radio" name="gender" id="other">
         <label for="other">Other</label><br><br>
         <!-- Form Submition -->
         <input type="button" onclick="test()" value="Submit">
